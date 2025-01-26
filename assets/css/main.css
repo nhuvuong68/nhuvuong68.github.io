@@ -114,6 +114,7 @@ input, select, textarea {
 		font-weight: 300;
 		color: #666;
 		line-height: 1.5em;
+		text-align: center;
 	}
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -142,6 +143,10 @@ input, select, textarea {
 		font-size: 1.5em;
 	}
 
+	h4 {
+		font-size: 0.8em;
+	}
+
 	header {
 		margin: 0 0 2em 0;
 	}
@@ -152,6 +157,7 @@ input, select, textarea {
 
 	footer {
 		margin: 2em 0 0 0;
+		text-align: center;
 	}
 
 	strong, b {
@@ -193,7 +199,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-top: solid 1px #ddd;
+		border-top: solid 2px #ddd;
 	}
 
 	blockquote {
@@ -1980,8 +1986,9 @@ input, select, textarea {
 /* Item */
 
 	.item {
-		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+		/* box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05); */
 		margin-bottom: 40px;
+		text-align: left;
 	}
 
 		.item header {
@@ -2283,6 +2290,7 @@ input, select, textarea {
 
 			#footer {
 				margin-left: 300px;
+				text-align: center;
 			}
 
 		/* Main */
@@ -2334,6 +2342,18 @@ input, select, textarea {
 			.item {
 				margin-bottom: 20px;
 			}
+		
+		/* Tag */
+		
+			.tag {
+				display: inline-block;
+				color: white;
+				background-color: #555;
+				border-radius: 3px;
+				padding: 2px 5px;
+				margin: 2px;
+				font-size: 0.8em;
+			}
 
 		/* Header */
 
@@ -2366,6 +2386,7 @@ input, select, textarea {
 
 			#footer {
 				margin-left: 20%;
+				text-align: center;
 			}
 
 		/* Main */
@@ -2407,6 +2428,7 @@ input, select, textarea {
 			.item {
 				margin-bottom: 15px;
 			}
+
 
 		/* Icons */
 
@@ -2548,6 +2570,7 @@ input, select, textarea {
 
 			#footer {
 				margin-left: 0;
+				text-align: center;
 			}
 
 		/* Main */
@@ -2572,7 +2595,7 @@ input, select, textarea {
 				#main section.cover {
 					padding: 4em 0;
 				}
-
+			
 	}
 
 /* Mobile */
