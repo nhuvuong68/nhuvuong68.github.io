@@ -140,7 +140,7 @@ input, select, textarea {
 			}
 
 	h3 {
-		font-size: 2em;
+		font-size: 1.5em;
 		font-weight: 400;
 	}
 
@@ -262,9 +262,35 @@ input, select, textarea {
 			.container {
 				width: 100%;
 			}
-
 		}
+/* Contact section styles */
+	.split.contact {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 
+	.split.contact section {
+		flex: 1 1 45%;
+		margin-bottom: 20px;
+	}
+
+	.split.contact .icons {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		gap: 10px;
+	}
+
+	.split.contact .icons li {
+		display: inline-block;
+	}
+
+	.split.contact .icons a {
+		text-decoration: none;
+		color: inherit;
+	}
 /* Row */
 
 	.row {
@@ -2000,7 +2026,7 @@ input, select, textarea {
 		}
 
 			.item header h3 {
-				font-size: 1em;
+				font-size: 1.5em;
 			}
 /* Tag */
 	
@@ -2039,6 +2065,17 @@ input, select, textarea {
 
 		.icon > .label {
 			display: none;
+		}
+		.icons.center {
+			display: flex;
+			justify-content: center;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		
+		.icons.center li {
+			margin: 0 10px;
 		}
 
 		.icon.solid:before {
@@ -2219,6 +2256,7 @@ input, select, textarea {
 					padding-left: 0;
 					margin-left: 0;
 				}
+				
 
 /* Main */
 
