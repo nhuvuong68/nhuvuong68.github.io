@@ -140,7 +140,8 @@ input, select, textarea {
 			}
 
 	h3 {
-		font-size: 1.5em;
+		font-size: 2em;
+		font-weight: 400;
 	}
 
 	h4 {
@@ -161,7 +162,7 @@ input, select, textarea {
 	}
 
 	strong, b {
-		font-weight: 300;
+		font-weight: 400;
 		color: #666;
 	}
 
@@ -822,7 +823,7 @@ input, select, textarea {
 				}
 
 				.row > .col-4-normal {
-					width: 33.33333%;
+					width: 50%;
 				}
 
 				.row > .off-4-normal {
@@ -2001,7 +2002,17 @@ input, select, textarea {
 			.item header h3 {
 				font-size: 1em;
 			}
-
+/* Tag */
+	
+	.tag {
+		display: inline-block;
+		color: white;
+		background-color: #555;
+		border-radius: 3px;
+		padding: 2px 5px;
+		margin: 2px;
+		font-size: 0.8em;
+	}
 /* Icons */
 
 	.icon {
@@ -2298,7 +2309,17 @@ input, select, textarea {
 			#main {
 				margin-left: 300px;
 			}
-
+		/* Tag */
+		
+			.tag {
+				display: inline-block;
+				color: white;
+				background-color: #555;
+				border-radius: 3px;
+				padding: 2px 5px;
+				margin: 2px;
+				font-size: 0.8em;
+			}
 	}
 
 /* Normal */
@@ -2436,7 +2457,17 @@ input, select, textarea {
 				width: 1.75em;
 				font-size: 1.25em;
 			}
-
+		/* Tag */
+		
+		.tag {
+			display: inline-block;
+			color: white;
+			background-color: #555;
+			border-radius: 3px;
+			padding: 2px 5px;
+			margin: 2px;
+			font-size: 0.8em;
+		}
 		/* Header */
 
 			#header {
@@ -2638,7 +2669,17 @@ input, select, textarea {
 				#main section.cover header {
 					padding: 0 1em;
 				}
-
+		/* Tag */
+		
+		.tag {
+			display: inline-block;
+			color: white;
+			background-color: #555;
+			border-radius: 3px;
+			padding: 2px 5px;
+			margin: 2px;
+			font-size: 0.8em;
+		}
 		/* Footer */
 
 			#footer .copyright li {
