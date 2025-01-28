@@ -140,7 +140,7 @@ input, select, textarea {
 			}
 
 	h3 {
-		font-size: 1.5em;
+		font-size: 1.2em;
 		font-weight: 400;
 	}
 
@@ -2305,6 +2305,7 @@ input, select, textarea {
 			#main > section.one {
 				background-color: #81918E;
 				background-image: url("../../images/banner.jpg");
+				color: #f5fafa;
 			}
 
 			#main > section.two {
