@@ -9,7 +9,6 @@ const PROFILE = {
   email: "nhu.vuong68@gmail.com",
   github: "https://github.com/nhuvuong68",
   linkedin: "https://www.linkedin.com/in/nhuvuong68/",
-  cv: "assets/cv/Nhu_Vuong_CV.pdf",
   avatar: "images/ava.jpg",
 
   eyebrow: "Product Portfolio",

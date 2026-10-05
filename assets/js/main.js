@@ -22,14 +22,12 @@ set("#year", new Date().getFullYear());
 
 /* ---------- Shared sections ---------- */
 function renderShared() {
-  document.querySelectorAll(".cv-link").forEach((a) => (a.href = PROFILE.cv));
   set("#dna", map(PROFILE.dna, (d) => `<div class="card-plain"><h3>${esc(d.title)}</h3><p>${esc(d.text)}</p></div>`));
   set("#closing", map(PROFILE.closing, (l) => `<span>${esc(l)}</span>`));
   set("#contact-links", `
     <a class="btn btn-primary" href="mailto:${esc(PROFILE.email)}">✉ ${esc(PROFILE.email)}</a>
     <a class="btn btn-ghost" href="${esc(PROFILE.linkedin)}" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="btn btn-ghost" href="${esc(PROFILE.github)}" target="_blank" rel="noopener">GitHub</a>
-    <a class="btn btn-ghost" href="${esc(PROFILE.cv)}" download>Download CV</a>`);
+    <a class="btn btn-ghost" href="${esc(PROFILE.github)}" target="_blank" rel="noopener">GitHub</a>`);
 }
 
 /* ---------- Home ---------- */
