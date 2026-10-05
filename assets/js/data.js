@@ -290,12 +290,12 @@ const CASES = [
     id: "data-products",
     number: "04",
     title: "Power BI decision products",
-    summary: "Dashboards built as products around the recurring decisions of 6 departments — used in 80% of company-wide recurring meetings.",
-    tags: ["Data product", "Power BI", "Power Query"],
+    summary: "Dashboards that start from a business need, not from the data — used in 80% of company-wide recurring meetings.",
+    tags: ["Data product", "Power BI", "Excel", "SharePoint"],
     meta: [
       { k: "My role", v: "Product Owner — and hands-on builder" },
       { k: "Users", v: "60 users across 6 departments" },
-      { k: "Platform", v: "Power BI, SharePoint" },
+      { k: "Platform", v: "Excel templates, SharePoint, Power BI" },
       { k: "Context", v: "Huu Toan Group" },
     ],
     blocks: [
@@ -308,15 +308,39 @@ const CASES = [
           { value: "80%", label: "of recurring company meetings" },
         ],
       },
-      { type: "flow", kicker: "Approach", heading: "From raw data to a decision", steps: ["Raw data", "Data model", "Business logic", "Dashboard", "Decision"] },
+      {
+        type: "flow",
+        kicker: "Approach",
+        heading: "Start from the business need, not the data",
+        steps: ["Business need", "Observe with users", "Define the data", "Build the dashboard", "Use it in recurring meetings"],
+      },
+      {
+        type: "cards",
+        kicker: "Product 1",
+        heading: "Sales pipeline: teaching a pipeline habit",
+        items: [
+          { title: "The need", text: "Help the sales team get used to working with a sales pipeline." },
+          { title: "Discovery", text: "I observed the work alongside sales and the sales lead, then proposed the fields myself in an Excel template." },
+          { title: "What I built", text: "A basic sales pipeline on top of that template — a first version of the product, so sales could learn the habit." },
+        ],
+      },
       {
         type: "image",
-        heading: "Sales pipeline: what moved in the last two weeks?",
+        heading: "What moved in the last two weeks?",
         text: "For the sales team's bi-weekly meeting: new leads, stage movement, deals won and lost, deals with no movement.",
         image: "images/port2_biweekly.png",
         note: "Built with sample data.",
       },
       { type: "embed", heading: "Try it: Sales Pipeline", src: "https://app.powerbi.com/view?r=eyJrIjoiNTY4YzhmMjEtOTMxOS00YmNjLWEzNzAtMmVmZGEyOTA3MmYwIiwidCI6ImRiMDVhMDA0LWQ5MWMtNDhkNS1hZjAyLTc5MDQwN2I1ZGZlMiIsImMiOjEwfQ%3D%3D", note: "Built with sample data." },
+      {
+        type: "cards",
+        kicker: "Product 2",
+        heading: "Sales performance: where do we stand right now?",
+        items: [
+          { title: "The need", text: "The Sales Head and the CEO wanted to know the current state of sales." },
+          { title: "What I did", text: "I took that question and delivered the dashboard myself, end to end." },
+        ],
+      },
       {
         type: "image",
         heading: "Weekly sales performance",
