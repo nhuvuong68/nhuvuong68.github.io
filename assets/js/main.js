@@ -91,7 +91,7 @@ const BLOCKS = {
   table: (b) => `${head(b)}${b.intro ? `<p class="muted">${esc(b.intro)}</p>` : ""}
     <div class="table-wrap"><table class="pairs">
       <thead><tr>${map(b.headers, (h) => `<th>${esc(h)}</th>`)}</tr></thead>
-      <tbody>${map(b.rows, (r) => `<tr>${map(r, (v, i) => `<td>${i ? "→ " : ""}${esc(v)}</td>`)}</tr>`)}</tbody>
+      <tbody>${map(b.rows, (r) => `<tr>${map(r, (v, i) => `<td>${i && b.headers.length === 2 ? "→ " : ""}${esc(v)}</td>`)}</tr>`)}</tbody>
     </table></div>
     ${b.after ? `<p class="after">${esc(b.after)}</p>` : ""}${note(b)}`,
   metrics: (b) => `${head(b)}<div class="stats">${map(b.items, (s) => `<div class="stat"><strong>${esc(s.value)}</strong><span>${esc(s.label)}</span></div>`)}</div>${note(b)}`,

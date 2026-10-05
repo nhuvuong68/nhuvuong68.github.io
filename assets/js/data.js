@@ -122,14 +122,16 @@ const CASES = [
       },
       {
         type: "table",
-        heading: "What the pilot taught us — shipped in later releases",
-        headers: ["Pilot feedback", "Shipped"],
+        kicker: "Prioritization",
+        heading: "Release plan: what shipped when, and why",
+        headers: ["Release", "What shipped", "Why then"],
         rows: [
-          ["Customer signature box didn't fit the job", "Redesigned the signature box"],
-          ["Uploading photos on site meant waiting", "Photos saved offline, auto-sync when back online"],
-          ["Customers needed the signed report to confirm", "Export the report as PDF and send it via Zalo"],
+          ["R1 · Go-live", "CRM online for Sales & CS. HES Mobile pilot with technicians in strong-coverage areas.", "Sales & CS start 2+ months earlier; real feedback from technicians early."],
+          ["R2 · Pilot feedback", "Redesigned signature box. Photos saved offline, auto-sync when back online. Signed report exported as PDF and sent via Zalo.", "What technicians asked for during the pilot."],
+          ["R3 · Offline", "Full offline mode.", "Requirements were clear after the pilot."],
+          ["R4 · Before & after the visit", "Check stock / order parts before leaving. Status notifications to customers.", "Pain points from field discovery: second visits for missing parts, customers calling CS."],
         ],
-        after: "Then the full offline mode — built on much clearer requirements.",
+        after: "Priorities were set release by release, in discussion with users and management.",
       },
       {
         type: "phones",

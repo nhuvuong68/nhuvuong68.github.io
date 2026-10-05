@@ -182,7 +182,7 @@ blockquote { margin: 0; padding: 20px 24px; border-radius: 12px; background: var
 
 .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; margin-top: 14px; background: var(--surface); }
 .pairs { width: 100%; border-collapse: collapse; }
-.pairs th, .pairs td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; font-size: .94rem; width: 50%; }
+.pairs th, .pairs td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; font-size: .94rem; }
 .pairs th { font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 700; background: var(--wire); }
 .pairs td:first-child { color: var(--muted); }
 .pairs td + td { font-weight: 600; }
@@ -272,3 +272,7 @@ blockquote { margin: 0; padding: 20px 24px; border-radius: 12px; background: var
 .lg-dot, .lg-visit { flex: none; width: 16px; height: 16px; border-radius: 50%; }
 .lg-dot { border: 3px solid var(--accent-2); background: var(--surface); }
 .lg-visit { background: var(--accent-2); }
+.pairs th:first-child:nth-last-child(2), .pairs td:first-child:nth-last-child(2) { width: 50%; }
+.pairs td:first-child:nth-last-child(3) { color: var(--text); font-weight: 700; white-space: nowrap; }
+.pairs td:first-child:nth-last-child(3) ~ td:last-child { color: var(--muted); font-weight: 400; }
+@media (max-width: 600px) { .pairs td:first-child:nth-last-child(3) { white-space: normal; } }
